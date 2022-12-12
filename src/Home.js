@@ -1,8 +1,12 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import { AppContext } from './context'
 
 const Home = () => {
+  const name= useContext(AppContext);
   return (
-    <div>Home</div>
+    <div>
+         {name}
+    </div>
   )
 }
 
